@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MRU - MRUV</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="/CSS/normalize.css">
+    <link rel="stylesheet" href="/CSS/estilos.css">
+
+</head>
+<body class="grid-container">
+    <header class="header">
+        <h1>Fisica basica</h1>
+        <a href="/index.html"><img src="/IMG/LogoUMG.png" alt="" class="logoUMG"></a>
+        <a href="/index.html"><img src="/IMG/Volver.png" alt="" class="Volver"></a>
+    </header>
+   
+    <section class="main">
+
+<!---------------------------------------------------MOVIMIENTO RECTILINEO UNIFORMEMENTE VARIADO---------------------------------------------------->
+        <article class="contenido">
+            <h2 class="mru">Movimiento Rectilineo Uniformemente Variado</h2>
+            <br>
+            
+                <P>El movimiento rectilíneo uniformemente variado o MRUV es un movimiento que ocurre sobre una línea recta con aceleración constante. 
+                    En el MRUV la aceleración es constante, nunca va a cambiar, siempre es la misma. Mucha atención, lo constante es la aceleración, 
+                    no la velocidad. </P>
+                    <br>
+    
+<!---------------------------------------------------------ACELERACION-------------------------------------------------------->
+    
+                    <div class="formulario1">
+                    <br>
+                    
+                        <h3>Aceleración</h3>
+                        <br>
+                    <p>La aceleración indica la variación de la velocidad por unidad de tiempo.
+
+                        Por ejemplo, tenemos un auto que parte del reposo (v0 = 0 m/s) y avanza con una aceleración constante de 2 m/s2. </p>
+                    <br>
+                        
+                    <div class="form1">
+                        <img src="/IMG/aceleracion.png" alt="" >
+                    <form class="f2MRU"> 
+                        <h3>Caclcular Aceleración</h3>
+                        <br>
+                        <label for="resultado">Resultado: <span id="ResAce1"> </span>
+                        </label>
+                        <br>
+                        <br><br>
+                        <label for="VelocidadFinalF1">Velocidad final:</label>
+                        <input id="VelocidadFinalF1" type="number" class="input-distancia" placeholder="Vf">
+                        <label for="">m/s</label>
+                        <br>
+                        <br>
+                        <label for="VelocidadInicialF1">Velocidad inicial: </label>
+                        <input id="VelocidadInicialF1" type="number" class="input-distancia" placeholder="Vi">
+                        <label for="">m/s.</label>
+                        <br>
+                        <br>
+                        <label for="TiempoF1">Tiempo: </label>
+                        <input id="tiempoF1" type="number" class="input-distancia" placeholder="Tiempo">
+                        <label for="">seg.</label>
+                        <br>
+                        <br>
+                        <button type="button" onclick="Aceleracion();" class="boton-calcular">Calcular</button>
+                    </form>
+                    </div>
+                </div>
+    
+<!---------------------------------------------------------DISTANCIA-------------------------------------------------------->
+    
+                    <br>
+            <div class="formulario1">
+                    <h3>Distancia</h3>
+            
+                    <br><p>La distancia en un Movimiento Rectilíneo Uniformemente Variado (MRUV) se refiere a la medida de la longitud que recorre un objeto 
+                        en movimiento durante un período de tiempo específico. En un MRUV, la velocidad del objeto cambia de manera uniforme y constante 
+                        en el tiempo, lo que significa que la aceleración es constante. Esto resulta en un cambio en la velocidad que puede ser de aumento o 
+                        disminución constante a lo largo del tiempo. La distancia en un MRUV se calcula utilizando la fórmula d=v0t+21at2, donde d representa 
+                        la distancia recorrida, v0 es la velocidad inicial del objeto, t es el tiempo transcurrido y a es la aceleración del objeto.
+                    </p>
+                    <br>
+                  
+                    <div class="form1">
+                        <img src="/IMG/Distancia.png" alt="" >
+    
+                    <form class="f3MRU"> 
+                        <h3>Caclcular Distancia</h3>
+                        <br>
+                        <label for="resultado">Resultado: <span id="ResDisMRUV"> </span>
+                        </label>
+                        <br>
+                        <br><br>
+                        <label for="VelocidadInicialF2">Velocidad inicial:</label>
+                        <input id="VelocidadInicialF2" type="number" class="input-distancia" placeholder="Vi">
+                        <label for="">m/s²</label>
+                        <br>
+                        <br>
+                        <label for="AceleracionF2">Aceleración: </label>
+                        <input id="AceleracionF2" type="number" class="input-distancia" placeholder="a">
+                        <label for="">m/s²</label>
+                        <br>
+                        <br>
+                        <label for="tiempoF2">Tiempo: </label>
+                        <input id="tiempoF2" type="number" class="input-distancia" placeholder="Tiempo">
+                        <label for="">seg.</label>
+                        <br>
+                        <br>
+                        <button type="button" onclick="Distancia2();" class="boton-calcular">Calcular</button>
+                    </form>
+                </div>
+            </div>
+    
+<!---------------------------------------------------------VELOCIDAD FINAL-------------------------------------------------------->
+    
+            <br>
+      
+            <br>
+    
+            <div class="formulario1">
+                <h3>Velocidad final</h3>
+                <br>
+                <p>
+                    La velocidad final en un Movimiento Rectilíneo Uniformemente Variado (MRUV) es la velocidad que tiene un objeto 
+                    en un punto específico de su trayectoria cuando experimenta una aceleración constante. Se define como la velocidad 
+                    que el objeto alcanzaría si continuara moviéndose a lo largo del MRUV bajo la misma aceleración.
+                    La velocidad final en un MRUV se representa típicamente con la letra "v" subíndice "f" o "vf". Para calcularla, 
+                    se utiliza la siguiente fórmula:
+                   
+                    </p>
+                    <br>
+                    <span>vf=v0+at</span>
+    
+                    
+                    <div class="form1">
+                        <img src="/IMG/Velocidad Final.png" alt="" >
+               
+                <br>
+               
+                    <form class="f1MRU"> 
+                        <h3>Caclcular Velocidad final</h3>
+                        <br>
+                        <label for="resultado">Resultado: <span id="ResVfMRUV"> </span>
+                        </label>
+                        <br>
+                        <br><br>
+                        <label for="VelocidadInicialF3">Velocidad inicial:</label>
+                        <input id="VelocidadInicialF3" type="number" class="input-distancia" placeholder="Vi">
+                        <label for="">m/s</label>
+                        <br>
+                        <br>
+                        <label for="AceleracionF3">Aceleración: </label>
+                        <input id="AceleracionF3" type="number" class="input-distancia" placeholder="a">
+                        <label for="">m/s²</label>
+                        <br>
+                        <br>
+                        <label for="tiempoF3">Tiempo: </label>
+                        <input id="tiempoF3" type="number" class="input-distancia" placeholder="Tiempo">
+                        <label for="">seg.</label>
+                        <br>
+                        <br>
+                        <button type="button" onclick="VelocidadFinal();" class="boton-calcular">Calcular</button>
+                    </form> 
+                    
+                </div>
+            </div>
+                <br>
+                <br> 
+         
+        </article>
+         
+<!----------------------------------------------FIN-----MOVIMIENTO RECTILINEO UNIFORME---------------------------------------------------->   
+    </section>
+   
+    <footer class="footer">
+        <H2 class="curso">DESARROLLO WEB 2024</H2>
+        <span class="estudiante">Angeles Cuy Quiché</span>
+        <br>
+        <span class="carnet">2290-19-9654</span>
+    </footer>
+    
+    <script type="text/javascript" src="/js/MRUV.js"></script>
+</body>
+</html>

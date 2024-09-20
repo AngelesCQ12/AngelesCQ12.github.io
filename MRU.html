@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MRU - MRUV</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="/CSS/normalize.css">
+    <link rel="stylesheet" href="/CSS/estilos.css">
+</head>
+<body class="grid-container">
+    <header class="header">
+        <h1>Fisica basica</h1>
+         <a href="/index.html"><img src="/IMG/LogoUMG.png" alt="" class="logoUMG"></a>
+        <a href="/index.html"><img src="/IMG/Volver.png" alt="" class="Volver"></a>
+
+    </header>
+   
+    <section class="main">
+
+<!---------------------------------------------------MOVIMIENTO RECTILINEO UNIFORME---------------------------------------------------->
+        <article class="contenido">
+        <h2 class="mru">Movimiento Rectilineo Uniforme</h2>
+        <br>
+        <div class="contenidoMRU">
+            <P>En física, un movimiento es rectilíneo uniforme cuando un «objeto» (por ejemplo) viaja en una trayectoria recta a una velocidad constante,1​ dado que su aceleración es nula.2​
+
+                El movimiento rectilíneo uniforme se designa frecuentemente con el acrónimo MRU, aunque en algunos países se denomina como MRC, por movimiento rectilíneo constante</P>
+                <br>
+
+<!---------------------------------------------------------MOVIMIENTO-------------------------------------------------------->
+
+                <div class="formulario1">
+                
+                
+                    <h3>Movimiento</h3>
+                <p>En física, el movimiento es un cambio de la posición de un cuerpo a lo largo del tiempo respecto de un sistema de referencia.
+
+                    El estudio del movimiento se puede realizar a través de la cinemática o a través de la dinámica. 
+                    En función de la elección del sistema de referencia quedarán definidas las ecuaciones del movimiento, 
+                    ecuaciones que determinarán la posición, la velocidad y la aceleración del cuerpo en cada instante de tiempo. </p>
+                <br>
+                
+                <div class="form1">
+                    <img src="/IMG/Movimiento.png" alt="" >
+                <form class="f2MRU"> 
+                    <h3>Caclcular velocidad</h3>
+                    <br>
+                    <label for="resultado">Resultado: <span id="ResVel1"> </span>
+                    </label>
+                    <br>
+                    <br><br>
+                    <label for="Velocidad">Distancia:</label>
+                    <input id="DistanciaF2" type="number" class="input-distancia" placeholder="Distancia">
+                    <label for="">km</label>
+                    <br>
+                    <br>
+                    <label for="Tiempo">Tiempo: </label>
+                    <input id="TiempoF2" type="number" class="input-distancia" placeholder="Tiempo">
+                    <label for="">h.</label>
+                    <br>
+                    <br>
+                    <button type="button" onclick="Velocidad();" class="boton-calcular">Calcular</button>
+                </form>
+                </div>
+            </div>
+
+<!---------------------------------------------------------TIEMPO-------------------------------------------------------->
+
+                <br>
+        <div class="formulario1">
+                <h3>Tiempo</h3>
+        
+                <br><p>El tiempo es una magnitud física con la que medimos la duración o separación de acontecimientos. 
+                    El tiempo permite ordenar los sucesos en secuencias. Dados dos eventos puntuales E1 y E2, que ocurren 
+                    respectivamente en dos coordenadas temporales t1 y t2, y en puntos del espacio diferentes P1 y P2, todas 
+                    las teorías físicas admiten que estos pueden cumplir una y solo una de las siguientes tres condiciones:
+                </p>
+                <br>
+
+                <div class="form1">
+                    <img src="/IMG/reloj.png" alt="" class="reloj" >
+
+                <form class="f3MRU"> 
+                    <h3>Caclcular Tiempo</h3>
+                    <br>
+                    <label for="resultado">Resultado: <span id="ResTie1"></span></label>
+                    <br>
+                    <br><br>
+                    <label for="Velocidad">Distancia: </label>
+                    <input id="DistanciaF3" type="number" class="input-distancia" placeholder="Distancia">
+                    <label for="">km</label>
+                    <br>
+                    <br>
+                    <label for="Velocidad">Velocidad: </label>
+                    <input id="VelocidadF3" type="number" class="input-distancia" placeholder="Velocidad">
+                    <label for="">Km/h</label>
+                    <br>
+                    <br>
+                    <button type="button" onclick="Tiempo();" class="boton-calcular">Calcular</button>
+                </form>
+            </div>
+        </div>
+
+<!---------------------------------------------------------DISTANCIA-------------------------------------------------------->
+
+        <br>
+    </div> <!--contenido mru-->
+        <br>
+
+        <div class="formulario1">
+            <h3>Distancia</h3>
+            <br>
+            <p>El espacio físico es el lugar donde se encuentran los entes materiales. El espacio físico es habitualmente 
+                concebido con tres dimensiones lineales, aunque los físicos modernos usualmente lo consideran, con el tiempo, 
+                como una parte de un infinito continuo de cuatro dimensiones conocido como espacio-tiempo, que en presencia de 
+                materia es curvo. La posición de un móvil se define como la variable de estado que proporciona una descripción 
+                geométrica definida en un instante dt determinado con respecto a un lugar geométrico descrito por el espectador. 
+                Así, se puede utilizar un sistema de coordenadas ortogonales, cilíndricas o esféricas para describir la posición 
+                de un cuerpo.</p>
+
+                
+                <div class="form1">
+                    <img src="/IMG/Distancia m.png" alt="" >
+            <br>
+                <form class="f1MRU"> 
+                    <h3>Caclcular distancia</h3>
+                    <br>
+                    <label for="resultado">Resultado:  <span id="ResDis1"> </span></label>
+                   
+                    <br>
+                    <br><br>
+                    <label for="Velocidad">Velocidad:</label>
+                    <input id="VelocidadF1" type="number" class="input-distancia" placeholder="Velocidad">
+                    <label for="">km/h</label>
+                    <br>
+                    <br>
+                    <label for="Tiempo">Tiempo: </label>
+                    <input id="TiempoF1" type="number" class="input-distancia" placeholder="Tiempo">
+                    <label for="">h.</label>
+                    <br>
+                    <br>
+                    
+                    <button type="button" class="boton-calcular" onclick="Distancia();" >Calcular</button>
+                </form>  
+                
+            </div>
+        </div>
+            <br>
+            <br> 
+     
+    </article>
+
+<!----------------------------------------------FIN-----MOVIMIENTO RECTILINEO UNIFORME---------------------------------------------------->
+       
+    </section>
+   
+    <footer class="footer">
+        <H2 class="curso">DESARROLLO WEB 2024</H2>
+        <span class="estudiante">Angeles Cuy Quiché</span>
+        <br>
+        <span class="carnet">2290-19-9654</span>
+    </footer>
+    
+    <script type="text/javascript" src="/js/MRU.js"></script>
+</body>
+</html>
